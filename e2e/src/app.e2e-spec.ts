@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to soduku-resolver!');
+    expect(page.getTitleText()).toEqual('Welcome to sudoku-resolver!');
   });
 
   afterEach(async () => {

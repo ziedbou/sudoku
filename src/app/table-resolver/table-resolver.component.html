@@ -1,0 +1,16 @@
+<div style="width: 700px; margin: 20px auto; text-align: center;">
+  <table class="table table-bordered suduku">
+    <tr *ngFor="let line of table; let i = index">
+      <td *ngFor="let col of line; let j = index" >
+        <input type="number" [(ngModel)]="table[i][j]">
+      </td>
+    </tr>
+  </table>
+  <button class="btn btn-success" (click)="calculer()">Calculer</button>
+
+  <table class="table table-bordered">
+    <tr *ngFor="let line of permissionValues">
+      <td *ngFor="let col of line">{{col | json}}</td>
+    </tr>
+  </table>
+</div>
